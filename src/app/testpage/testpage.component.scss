@@ -131,3 +131,31 @@
   height: 100%;
   padding-top: 50px;
 }
+
+.customContainerRight {
+  background-color: white;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 100%;
+  padding-top: 30px;
+  margin-left: -80px;
+}
+
+.titleGlobal {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 70px;
+}
+.titleGlobal:first-letter {
+  text-transform: uppercase;
+}
+
+.descriptionGlobal {
+  font-family: "EncodeSans Regular", sans-serif;
+  font-size: 30px;
+}
+.descriptionGlobal:first-letter {
+  text-transform: uppercase;
+}
