@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ali-firebase": {
+      "hosting": {
+        "testworkingcss": [
+          "ali-firebase"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ali-firebase"
+  }
+}

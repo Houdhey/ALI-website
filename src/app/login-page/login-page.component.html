@@ -1,0 +1,177 @@
+<div class="myContainer" id="myContainer">
+  <div class="forms-container">
+    <div class="signin-signup">
+      <form action="#" class="sign-in-form">
+        <h2 class="title">Sign in</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <input type="submit" value="Login" class="btn solid" />
+        <p class="social-text">Or Sign in with social platforms</p>
+        <div class="social-media">
+          <a href="#" class="social-icon" style="background-color: #f2f2f2">
+            <fa-icon style="color: #f14336" [icon]="google"></fa-icon>
+          </a>
+          <a href="#" class="social-icon" style="background-color: #2868b2">
+            <fa-icon style="color: white" [icon]="linkedin"></fa-icon>
+          </a>
+        </div>
+      </form>
+      <form action="#" class="sign-up-form">
+        <h2 class="title">Sign up</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <input type="submit" class="btn" value="Sign up" />
+        <p class="social-text">Or Sign up with social platforms</p>
+        <div class="social-media">
+          <a href="#" class="social-icon" style="background-color: #f2f2f2">
+            <fa-icon style="color: #f14336" [icon]="google"></fa-icon>
+          </a>
+          <a href="#" class="social-icon" style="background-color: #2868b2">
+            <fa-icon style="color: white" [icon]="linkedin"></fa-icon>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="panels-container">
+    <div class="panel left-panel">
+      <div class="content">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              src="assets/images/logo/logo3.png"
+              style="width: 80px; height: 80px"
+            />
+            <a
+              class="navbar-brand mx-auto mx-lg-0"
+              style="font-family: Glimmer, serif"
+              >AL</a
+            >
+            <div
+              class="navbar-brand mx-auto mx-lg-0"
+              style="font-family: Glimmer, serif; margin-left: 6px !important"
+            >
+              I
+            </div>
+          </div>
+          <div
+            style="
+              font-family: Glimmer, serif;
+              font-size: 10px;
+              margin-top: 10px;
+              color: #203952;
+            "
+          >
+            Accounting Luxembourg Institute
+          </div>
+        </div>
+        <h3 style="font-family: bootstrap-icons, serif; margin-top: 20px">
+          New here ?
+        </h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, ex
+          ratione. Aliquid!
+        </p>
+        <button
+          (click)="addSignUpMode()"
+          class="btn transparent"
+          id="sign-up-btn"
+        >
+          Sign up
+        </button>
+      </div>
+      <img src="assets/svg/log.svg" class="image" alt="" />
+    </div>
+    <div class="panel right-panel">
+      <div class="content">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              src="assets/images/logo/logo3.png"
+              style="width: 80px; height: 80px"
+            />
+            <a
+              class="navbar-brand mx-auto mx-lg-0"
+              style="font-family: Glimmer, serif"
+              >AL</a
+            >
+            <div
+              class="navbar-brand mx-auto mx-lg-0"
+              style="font-family: Glimmer, serif; margin-left: 6px !important"
+            >
+              I
+            </div>
+          </div>
+          <div
+            style="
+              font-family: Glimmer, serif;
+              font-size: 10px;
+              margin-top: 10px;
+              color: #203952;
+            "
+          >
+            Accounting Luxembourg Institute
+          </div>
+        </div>
+        <h3 style="margin-top: 20px">One of us ?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          laboriosam ad deleniti.
+        </p>
+        <button
+          (click)="removeSignUpMode()"
+          class="btn transparent"
+          id="sign-in-btn"
+        >
+          Sign in
+        </button>
+      </div>
+      <img src="assets/svg/register.svg" class="image" />
+    </div>
+  </div>
+</div>

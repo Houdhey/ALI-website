@@ -23,11 +23,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "src/styles.scss",
               "src/assets/css/bootstrap.min.css",
-              "src/assets/css/fontawesome.css",
               "src/assets/css/templatemo-space-dynamic.css",
               "src/assets/css/animated.css",
               "src/assets/css/owl.css"
@@ -103,11 +105,13 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "src/styles.scss",
               "src/assets/css/bootstrap.min.css",
-              "src/assets/css/fontawesome.css",
               "src/assets/css/templatemo-space-dynamic.css",
               "src/assets/css/animated.css",
               "src/assets/css/owl.css"
@@ -123,6 +127,16 @@
               "src/assets/imagesloaded.js",
               "src/assets/templatemo-custom.js"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "testworkingcss:build:production",
+            "firebaseProject": "ali-firebase",
+            "firebaseHostingSite": "ali-firebase"
           }
         }
       }
