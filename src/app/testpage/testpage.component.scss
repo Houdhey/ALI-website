@@ -159,3 +159,61 @@
 .descriptionGlobal:first-letter {
   text-transform: uppercase;
 }
+
+/*NEWSLETTER*/
+.subscribeForm {
+  padding: 0px;
+  width: 100%;
+  position: relative;
+}
+
+.emailForm {
+  display: block;
+  position: relative;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.emailInput {
+  width: 70%;
+  direction: ltr;
+  background-color: rgba(23, 22, 26, 0.14);
+  color: #232226;
+  border: 1px solid transparent;
+  padding: 14px 15px;
+  line-height: 1.3;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-appearance: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: inherit;
+}
+
+.email-btn {
+  color: #fff;
+  background-color: #17161a;
+  border: 1px solid #17161a;
+  padding: 14px 18px;
+  min-height: 52px;
+  line-height: 20px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  -o-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  font-family: "Space Grotesk Bold", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  vertical-align: middle;
+  outline: none;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
