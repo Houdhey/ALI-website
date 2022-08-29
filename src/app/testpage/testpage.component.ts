@@ -48,6 +48,7 @@ export class TestpageComponent implements OnInit {
       carImage3!.style.marginLeft = '0px';
 
       document.getElementById('bigTitle').style.fontSize = '60px';
+      document.getElementById('bigTitle').style.marginLeft = '0px';
 
       document.getElementById('section3part1').style.flexDirection = 'column';
       document.getElementById('section3part2').style.flexDirection = 'column';
@@ -69,6 +70,7 @@ export class TestpageComponent implements OnInit {
       carImage3!.style.marginLeft = '-300px';
 
       document.getElementById('bigTitle').style.fontSize = '80px';
+      document.getElementById('bigTitle').style.marginLeft = '-100px';
 
       document.getElementById('section3part1').style.flexDirection = 'row';
       document.getElementById('section3part2').style.flexDirection = 'row';
