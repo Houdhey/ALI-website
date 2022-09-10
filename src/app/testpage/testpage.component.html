@@ -123,16 +123,15 @@
                 >
                   <div class="emailForm">
                     <input
+                      id="emailToSend"
                       type="email"
-                      name="your-email"
-                      value=""
                       size="40"
                       class="emailInput"
                       aria-required="true"
                       aria-invalid="false"
                       placeholder="Votre adresse email"
                     />
-                    <button class="email-btn">
+                    <button (click)="sendEmail()" class="email-btn">
                       <span class="btn-load"></span>
                       <span class="text">Je m'inscris</span>
                     </button>
@@ -228,21 +227,32 @@
 
   <div
     id="section3part1"
-    style="display: flex; flex-direction: row; margin-top: 50px"
+    style="
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      align-items: center;
+    "
   >
-    <div style="">
+    <div style="height: 60vh">
       <!--      <img
         id="carImage"
         style="width: 1100px; height: 1100px; margin-left: -300px"
         src="assets/images/template4/car.svg"
       />-->
       <ng-lottie
-        style="width: 1100px; height: 1100px"
         id="carImage"
         [options]="{ path: 'assets/lotties/computer-finance.json' }"
       ></ng-lottie>
     </div>
-    <div style="flex-basis: 50%; margin-left: 50px; margin-right: 10px">
+    <div
+      style="
+        flex-basis: 50%;
+        margin-left: 50px;
+        margin-right: 10px;
+        align-items: center;
+      "
+    >
       <div class="titleGlobal" style="margin-top: 150px">
         Chez Accounting Luxembourg Institute,
       </div>
@@ -251,23 +261,35 @@
         objectif est de vous fournir des outils et conseils judicieux pour
         faciliter vos prises de décisions.
       </div>
+
       <div
         class="titleGlobal"
-        style="font-size: 30px; color: #ff6884; margin-top: 30px"
+        style="font-size: 20px; color: #2a356c; margin-top: 30px"
       >
-        - Gestion de la comptabilité et de la fiscalité de nos clients
+        <img
+          style="height: 60px; width: 60px; margin-right: 20px"
+          src="assets/images/icons/hommePc.png"
+        />
+        Gestion de la comptabilité et de la fiscalité de nos clients
+      </div>
+
+      <div
+        class="titleGlobal"
+        style="font-size: 20px; color: #2a356c; margin-top: 30px"
+      >
+        <img
+          style="height: 60px; width: 60px; margin-right: 20px"
+          src="assets/images/icons/business2.png"
+        />Adaptation de nos services aux besoins de chacun
       </div>
       <div
         class="titleGlobal"
-        style="font-size: 30px; color: #ff6884; margin-top: 30px"
+        style="font-size: 20px; color: #2a356c; margin-top: 30px"
       >
-        - Adaptation de nos services aux besoins de chacun
-      </div>
-      <div
-        class="titleGlobal"
-        style="font-size: 30px; color: #ff6884; margin-top: 30px"
-      >
-        - Votre comptabilité est entre de bonnes mains.
+        <img
+          style="height: 60px; width: 60px; margin-right: 20px"
+          src="assets/images/icons/business3.png"
+        />Votre comptabilité est entre de bonnes mains.
       </div>
 
       <div class="descriptionGlobal" style="margin-top: 30px">
@@ -275,6 +297,43 @@
         important pour vous.
       </div>
     </div>
+  </div>
+  <img
+    id="path1"
+    style="
+      width: 220px;
+
+      position: absolute;
+
+      margin-top: 80px;
+      margin-left: 100px;
+    "
+    src="assets/svg/step2-3.svg"
+  />
+  <div
+    style="
+      position: absolute;
+
+      right: auto;
+      bottom: auto;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    "
+  >
+    <img
+      style="
+        width: 700px;
+        width: 700px;
+        position: absolute;
+        left: 84.6vw;
+        top: auto;
+        right: auto;
+
+        opacity: 0.8;
+      "
+      src="assets/svg/liquid-purple.svg"
+    />
   </div>
 
   <div
@@ -285,7 +344,12 @@
     <div style="display: flex; flex-direction: row" id="section3part2">
       <div
         id="section3part2Div1"
-        style="flex-basis: 50%; margin-left: 200px; margin-right: 10px"
+        style="
+          flex-basis: 50%;
+          margin-left: 200px;
+          margin-right: 10px;
+          align-items: center;
+        "
       >
         <div class="titleGlobal" style="margin-top: 150px">
           Quand l'expert-comptable est aussi votre coach
@@ -315,7 +379,17 @@
       </div>
     </div>
   </div>
-
+  <img
+    id="path2"
+    style="
+      width: 220px;
+      position: absolute;
+      margin-top: -100px;
+      margin-right: 100px;
+      right: 0;
+    "
+    src="assets/svg/step1-2.svg"
+  />
   <div
     style="display: flex; flex-direction: row; margin-top: 50px"
     id="section3part3"

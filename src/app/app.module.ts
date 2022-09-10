@@ -17,7 +17,11 @@ import { provideStorage, getStorage } from '@angular/fire/storage';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
-
+import {
+  HttpClientModule,
+  HttpClient,
+  HTTP_INTERCEPTORS,
+} from '@angular/common/http';
 export function playerFactory() {
   return player;
 }
@@ -40,6 +44,7 @@ export function playerFactory() {
     provideStorage(() => getStorage()),
     ReactiveFormsModule,
     NgxDropzoneModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { map } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-testpage',
@@ -6,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./testpage.component.scss'],
 })
 export class TestpageComponent implements OnInit {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   public innerWidth: any;
   ngOnInit(): void {
@@ -77,5 +79,21 @@ export class TestpageComponent implements OnInit {
       document.getElementById('section3part2Div1').style.marginLeft = '200px';
       document.getElementById('section3part3').style.flexDirection = 'row';
     }
+  }
+
+  sendEmail() {
+    const mailApi = 'https://mailthis.to/houdheyfa.bouzid@gmail.com';
+    const emailValue = document.getElementById(
+      'emailToSend'
+    ) as HTMLInputElement;
+    console.log('button clicked for this email ', emailValue.value);
+    this.http
+      .post(mailApi, emailValue.value, { responseType: 'text' })
+      .subscribe(
+        (response) => {
+          console.log('response ' + response);
+        },
+        (error) => console.log('error ' + error)
+      );
   }
 }
