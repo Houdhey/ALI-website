@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { map } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-testpage',
@@ -82,13 +82,17 @@ export class TestpageComponent implements OnInit {
   }
 
   sendEmail() {
-    const mailApi = 'https://mailthis.to/houdheyfa.bouzid@gmail.com';
+    const mailApi = 'https://formspree.io/f/xwkzpdow';
     const emailValue = document.getElementById(
       'emailToSend'
     ) as HTMLInputElement;
     console.log('button clicked for this email ', emailValue.value);
+
+    let headers = new HttpHeaders({
+      Accept: 'application/json',
+    });
     this.http
-      .post(mailApi, emailValue.value, { responseType: 'text' })
+      .post(mailApi, { email: emailValue.value }, { headers: headers })
       .subscribe(
         (response) => {
           console.log('response ' + response);
