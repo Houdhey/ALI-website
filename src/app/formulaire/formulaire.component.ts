@@ -36,6 +36,7 @@ export class FormulaireComponent implements OnInit {
   }
   shadowButton() {
     let modalWrapper = document.getElementById('modal_wrapper');
+
     modalWrapper.classList.remove('active');
   }
 
