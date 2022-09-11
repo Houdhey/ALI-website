@@ -23,6 +23,7 @@ import {
   HTTP_INTERCEPTORS,
 } from '@angular/common/http';
 import { CarouselComponent } from './carousel/carousel.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
 export function playerFactory() {
   return player;
 }
@@ -33,6 +34,7 @@ export function playerFactory() {
     LoginPageComponent,
     DashboardComponent,
     CarouselComponent,
+    FormulaireComponent,
   ],
   imports: [
     BrowserModule,

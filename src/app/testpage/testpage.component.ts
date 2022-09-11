@@ -9,6 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class TestpageComponent implements OnInit {
   constructor(private http: HttpClient) {}
+  modalOpened;
 
   public innerWidth: any;
   ngOnInit(): void {
@@ -37,7 +38,6 @@ export class TestpageComponent implements OnInit {
     container.cursor = 'none';
   }
 
-  openForm() {}
   resizeImage() {
     const myId = document.getElementById('myFlexContainer');
     const flexContainer1 = document.getElementById('flexContainer1');
@@ -116,5 +116,18 @@ export class TestpageComponent implements OnInit {
         },
         (error) => console.log('error ' + error)
       );
+  }
+
+  openForm() {
+    console.log('opening form ');
+    let modal_wrapper2 = document.getElementById('modal_wrapper2');
+    modal_wrapper2.classList.add('active');
+    this.modalOpened = true;
+  }
+
+  closeForm() {
+    let modal_wrapper2 = document.getElementById('modal_wrapper2');
+    modal_wrapper2.classList.remove('active');
+    this.modalOpened = false;
   }
 }
