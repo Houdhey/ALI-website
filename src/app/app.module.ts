@@ -22,6 +22,7 @@ import {
   HttpClient,
   HTTP_INTERCEPTORS,
 } from '@angular/common/http';
+import { CarouselComponent } from './carousel/carousel.component';
 export function playerFactory() {
   return player;
 }
@@ -31,6 +32,7 @@ export function playerFactory() {
     TestpageComponent,
     LoginPageComponent,
     DashboardComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

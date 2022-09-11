@@ -21,6 +21,23 @@ export class TestpageComponent implements OnInit {
     console.log('width actuel : ' + this.innerWidth);
     this.resizeImage();
   }
+
+  makeItSmile() {
+    const avatar = document.getElementById('avatarContactButton').style;
+    const container = document.getElementById('contactContainer').style;
+    avatar.backgroundImage = 'url("../../assets/images/icons/goodbye.png")';
+
+    container.cursor = 'pointer';
+  }
+
+  makeItCry() {
+    const avatar = document.getElementById('avatarContactButton').style;
+    const container = document.getElementById('contactContainer').style;
+    avatar.backgroundImage = 'url("../../assets/images/icons/crying.png")';
+    container.cursor = 'none';
+  }
+
+  openForm() {}
   resizeImage() {
     const myId = document.getElementById('myFlexContainer');
     const flexContainer1 = document.getElementById('flexContainer1');
