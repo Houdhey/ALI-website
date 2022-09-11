@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { map } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { VariableStateService } from '../services/variable-state.service';
 
 @Component({
   selector: 'app-testpage',
@@ -8,7 +9,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./testpage.component.scss'],
 })
 export class TestpageComponent implements OnInit {
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    public variableStateService: VariableStateService
+  ) {}
   modalOpened;
 
   public innerWidth: any;
@@ -119,6 +123,7 @@ export class TestpageComponent implements OnInit {
   }
 
   openForm() {
+    this.variableStateService.formDoneButton = false;
     console.log('opening form ');
     let modal_wrapper2 = document.getElementById('modal_wrapper2');
     modal_wrapper2.classList.add('active');

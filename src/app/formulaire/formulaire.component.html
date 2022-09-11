@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="header">
     <ul>
-      <li class="active form_1_progessbar">
+      <li id="form_1_progessbar" class="active form_1_progessbar">
         <div>
           <p>1</p>
         </div>
@@ -127,7 +127,7 @@
       <button type="button" class="btn_back" (click)="form3Back()">
         <span class="icon"></span>Back
       </button>
-      <button type="button" class="btn_done" (click)="doneButton()">
+      <button (click)="doneButton()" type="button" class="btn_done">
         Done
       </button>
     </div>
@@ -135,7 +135,7 @@
 </div>
 
 <div id="modal_wrapper" class="modal_wrapper">
-  <div class="shadow"></div>
+  <div (click)="shadowButton()" class="shadow"></div>
   <div class="success_wrap">
     <span class="modal_icon"></span>
     <p>You have successfully completed the process.</p>
