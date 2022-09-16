@@ -261,12 +261,12 @@ body {
 }
 
 .section-heading h2 span {
-  color: #fe3f40;
+  color: #2a356c;
 }
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: #f6967f;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -278,7 +278,7 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #fe3f40;
+  background-color: #2a356c;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -293,7 +293,7 @@ body {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #fe3f40;
+  color: #2a356c;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
@@ -322,15 +322,15 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fe3f40 !important;
+  color: #2a356c !important;
 }
 
 .background-header .nav li a.active {
-  color: #fe3f40 !important;
+  color: #2a356c !important;
 }
 
 .header-area {
-  background-color: #fafafa;
+  background-color: #f5f4ff;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -376,7 +376,7 @@ header
 }
 
 .logo h4 span {
-  color: #fe3f40;
+  color: #2a356c;
 }
 
 .background-header .main-nav .logo h4 {
@@ -444,18 +444,18 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fe3f40 !important;
+  color: #fd6c43 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fe3f40 !important;
+  color: #fd6c43 !important;
   opacity: 1;
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #03a4ed;
+  background-color: #f6967f;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -517,7 +517,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fe3f40 !important;
+  color: #2a356c !important;
   padding-left: 25px;
 }
 
@@ -657,7 +657,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fe3f40;
+  color: #2a356c;
 }
 
 @media (max-width: 1200px) {
@@ -690,7 +690,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fe3f40 !important;
+    color: #2a356c !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -751,7 +751,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fe3f40 !important;
+    color: #2a356c !important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -866,7 +866,7 @@ preloader
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #fe3f40;
+  background: #2a356c;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -889,7 +889,7 @@ preloader
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #fe3f40;
+  background: #2a356c;
   border-radius: 50%;
 }
 
@@ -935,7 +935,7 @@ Banner Style
 .main-banner .left-content h6 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #fe3f40;
+  color: #2a356c;
   margin-bottom: 15px;
 }
 
@@ -952,7 +952,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 span {
-  color: #fe3f40;
+  color: #2a356c;
 }
 
 .main-banner .left-content p {
@@ -974,7 +974,7 @@ Banner Style
   background-color: #fff;
   font-size: 15px;
   font-weight: 500;
-  color: #fe3f40;
+  color: #2a356c;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
@@ -986,7 +986,7 @@ Banner Style
 .main-banner .left-content form input {
   width: 470px;
   height: 66px;
-  background-color: #03a4ed;
+  background-color: #f6967f;
   border-radius: 33px;
   border: none;
   outline: none;
@@ -1480,7 +1480,7 @@ form#contact button {
 }
 
 form#contact button:hover {
-  background-color: #fe3f40;
+  background-color: #2a356c;
 }
 
 /*
@@ -1495,7 +1495,7 @@ footer p {
 }
 
 footer p a {
-  color: #fe3f40;
+  color: #2a356c;
 }
 
 /*
