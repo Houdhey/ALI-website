@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { map } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { VariableStateService } from '../services/variable-state.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-testpage',
@@ -9,10 +10,7 @@ import { VariableStateService } from '../services/variable-state.service';
   styleUrls: ['./testpage.component.scss'],
 })
 export class TestpageComponent implements OnInit {
-  constructor(
-    private http: HttpClient,
-    public variableStateService: VariableStateService
-  ) {}
+  constructor(private http: HttpClient, public variableStateService: VariableStateService, private router: Router) {}
   modalOpened;
 
   public innerWidth: any;
@@ -20,6 +18,13 @@ export class TestpageComponent implements OnInit {
     this.innerWidth = window.innerWidth;
     this.resizeImage();
   }
+
+  scrollToId(id) {
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event: { target: { innerWidth: any } }) {
     this.innerWidth = event.target.innerWidth;
@@ -27,11 +32,14 @@ export class TestpageComponent implements OnInit {
     this.resizeImage();
   }
 
+  goToMissions() {
+    this.router.navigateByUrl('/missions');
+  }
+
   makeItSmile() {
     const avatar = document.getElementById('avatarContactButton').style;
     const container = document.getElementById('contactContainer').style;
     avatar.backgroundImage = 'url("../../assets/images/icons/goodbye.png")';
-
     container.cursor = 'pointer';
   }
 
@@ -46,9 +54,7 @@ export class TestpageComponent implements OnInit {
     const myId = document.getElementById('myFlexContainer');
     const flexContainer1 = document.getElementById('flexContainer1');
 
-    const customContainerRight = document.getElementById(
-      'customContainerRight'
-    );
+    const customContainerRight = document.getElementById('customContainerRight');
     const carImage = document.getElementById('carImage');
     const carImage2 = document.getElementById('carImage2');
     const carImage3 = document.getElementById('carImage3');
@@ -104,22 +110,18 @@ export class TestpageComponent implements OnInit {
 
   sendEmail() {
     const mailApi = 'https://formspree.io/f/xwkzpdow';
-    const emailValue = document.getElementById(
-      'emailToSend'
-    ) as HTMLInputElement;
+    const emailValue = document.getElementById('emailToSend') as HTMLInputElement;
     console.log('button clicked for this email ', emailValue.value);
 
     let headers = new HttpHeaders({
       Accept: 'application/json',
     });
-    this.http
-      .post(mailApi, { email: emailValue.value }, { headers: headers })
-      .subscribe(
-        (response) => {
-          console.log('response ' + response);
-        },
-        (error) => console.log('error ' + error)
-      );
+    this.http.post(mailApi, { email: emailValue.value }, { headers: headers }).subscribe(
+      (response) => {
+        console.log('response ' + response);
+      },
+      (error) => console.log('error ' + error)
+    );
   }
 
   openForm() {

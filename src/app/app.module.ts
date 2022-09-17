@@ -17,14 +17,13 @@ import { provideStorage, getStorage } from '@angular/fire/storage';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
-import {
-  HttpClientModule,
-  HttpClient,
-  HTTP_INTERCEPTORS,
-} from '@angular/common/http';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
-import { MissionContainerComponent } from './mission-container/mission-container.component';
+import { MissionContainerComponent } from './missions/mission-container/mission-container.component';
+import { MissionContainer2Component } from './missions/mission-container2/mission-container2.component';
+import { MissionContainer3Component } from './missions/mission-container3/mission-container3.component';
+import { MissionPageComponent } from './missions/mission-page/mission-page.component';
 export function playerFactory() {
   return player;
 }
@@ -37,6 +36,9 @@ export function playerFactory() {
     CarouselComponent,
     FormulaireComponent,
     MissionContainerComponent,
+    MissionContainer2Component,
+    MissionContainer3Component,
+    MissionPageComponent,
   ],
   imports: [
     BrowserModule,

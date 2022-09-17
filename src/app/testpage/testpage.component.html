@@ -1,33 +1,26 @@
 <body style="background-color: #f5f4ff">
   <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
+  <!--  <div id="js-preloader" class="js-preloader">-->
+  <!--    <div class="preloader-inner">-->
+  <!--      <span class="dot"></span>-->
+  <!--      <div class="dots">-->
+  <!--        <span></span>-->
+  <!--        <span></span>-->
+  <!--        <span></span>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
 
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header
-    class="header-area header-sticky wow slideInDown"
-    data-wow-duration="0.75s"
-    data-wow-delay="0s"
-  >
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="main-nav">
             <a href="index.html" class="logo">
-              <img
-                style="width: 60px; height: 60px"
-                src="assets/images/logo/logo3.png"
-              />
+              <img style="width: 60px; height: 60px" src="assets/images/logo/logo3.png" />
             </a>
 
             <ul class="nav">
@@ -35,7 +28,7 @@
                 <a href="#top" class="active">Accueil</a>
               </li>
               <li class="scroll-to-section">
-                <a href="#missions">Missions</a>
+                <a (click)="goToMissions()">Missions</a>
               </li>
               <li class="scroll-to-section">
                 <div class="main-red-button">
@@ -97,9 +90,7 @@
                   class="newsletterContainer"
                 >
                   Entrepreneurs,
-                  <div style="white-space: nowrap">
-                    vous êtes au bon endroit.
-                  </div>
+                  <div style="white-space: nowrap">vous êtes au bon endroit.</div>
                 </div>
                 <div
                   style="
@@ -111,13 +102,9 @@
                   "
                   class="newsletterContainer"
                 >
-                  Inscrivez-vous à notre Newsletter et recevez nos meilleurs
-                  conseils :
+                  Inscrivez-vous à notre Newsletter et recevez nos meilleurs conseils :
                 </div>
-                <div
-                  style="margin-left: -100px; margin-top: 20px"
-                  class="subscribeForm"
-                >
+                <div style="margin-left: -100px; margin-top: 20px" class="subscribeForm">
                   <div class="emailForm">
                     <input
                       id="emailToSend"
@@ -137,17 +124,9 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div
-                class="right-image wow fadeInRight"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                 <img
-                  style="
-                    transform: scale(3.5);
-                    margin-top: 155px;
-                    transform-origin: initial;
-                  "
+                  style="transform: scale(3.5); margin-top: 155px; transform-origin: initial"
                   src="assets/images/template4/hello3.svg"
                 />
               </div>
@@ -158,36 +137,26 @@
     </div>
   </div>
 
-  <div
-    id="flexContainer1"
-    class="fadeIn"
-    data-wow-duration="1s"
-    data-wow-delay="0.5s"
-    style="margin-left: 80px"
-  >
+  <div id="flexContainer1" class="fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-left: 80px">
     <div class="container customContainer">
       <div class="flexContainer" id="myFlexContainer">
-        <div class="wrap">
+        <div class="wrap" (click)="scrollToId('section3part1')">
           <div class="theMagicBorder">
             <div class="logoMagic">
               <img src="assets/images/template4/expertiseComptableBlue.svg" />
             </div>
             <div class="titleMagic">Expertise Comptable</div>
             <div class="titleDescription">
-              Nous offrons à nos clients une attention personnalisée et
-              l'attention nécessaire pour assurer que leurs projets soient menés
-              à bien.
+              Nous offrons à nos clients une attention personnalisée et l'attention nécessaire pour assurer que leurs
+              projets soient menés à bien.
             </div>
           </div>
         </div>
 
         <div
           class="wrap"
-          style="
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          "
+          (click)="scrollToId('customContainerRight')"
+          style="display: flex; flex-direction: column; justify-content: space-between"
         >
           <div class="theMagicBorder">
             <div class="logoMagic" style="flex: 0.5">
@@ -195,21 +164,20 @@
             </div>
             <div class="titleMagic" style="flex: 0.5">Formation</div>
             <div class="titleDescription">
-              A nos côtés, vous aurez l'opportunité de développer vos
-              apprentissages personnels et professionnels.
+              A nos côtés, vous aurez l'opportunité de développer vos apprentissages personnels et professionnels.
             </div>
           </div>
         </div>
 
-        <div class="wrap">
+        <div class="wrap" (click)="scrollToId('section3part3')">
           <div class="theMagicBorder">
             <div class="logoMagic">
               <img src="assets/images/template4/jogging.svg" />
             </div>
             <div class="titleMagic">Coaching</div>
             <div class="titleDescription">
-              Les clients reçoivent les outils et conseils nécessaires pour
-              répondre à tous leurs besoins comptables, juridiques et fiscaux.
+              Les clients reçoivent les outils et conseils nécessaires pour répondre à tous leurs besoins comptables,
+              juridiques et fiscaux.
             </div>
           </div>
         </div>
@@ -241,53 +209,16 @@
       margin-top: 100px;
     "
   >
-    <div
-      style="
-        font-family: 'MadeTommy Medium', sans-serif;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 50px;
-      "
-    >
-      <img
-        src="assets/images/icons/surprise-box.png"
-        style="width: 100px; display: block; margin: 0 auto 15px auto"
-      />
+    <div style="font-family: 'MadeTommy Medium', sans-serif; font-size: 40px; text-align: center; margin-bottom: 50px">
+      <img src="assets/images/icons/surprise-box.png" style="width: 100px; display: block; margin: 0 auto 15px auto" />
       Vous n'êtes pas ici par hasard.
-      <div>
-        Nos experts-comptables et nos équipes sont faites pour vous si :
-      </div>
+      <div>Nos experts-comptables et nos équipes sont faites pour vous si :</div>
     </div>
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-      "
-    >
+    <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap">
       <div style="display: flex; flex-direction: column; margin: 30px">
-        <img
-          style="width: 100px; display: block; margin: 0 auto 15px auto"
-          src="assets/images/icons/nouer.png"
-        />
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div
-            style="
-              background-color: #2a356c;
-              border-radius: 15px;
-              width: 45px;
-              height: 45px;
-              position: relative;
-            "
-          >
+        <img style="width: 100px; display: block; margin: 0 auto 15px auto" src="assets/images/icons/nouer.png" />
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div style="background-color: #2a356c; border-radius: 15px; width: 45px; height: 45px; position: relative">
             <p
               style="
                 font-family: 'EncodeSans Medium', serif;
@@ -304,21 +235,10 @@
             </p>
           </div>
           <div style="flex-direction: column; display: flex">
-            <div
-              style="
-                font-family: 'MadeTommy Medium', sans-serif;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Medium', sans-serif; margin-left: 10px">
               Vous êtes entrepreneur. Pas Comptable.
             </div>
-            <div
-              style="
-                font-family: 'MadeTommy Regular', sans-serif;
-                font-size: 15px;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Regular', sans-serif; font-size: 15px; margin-left: 10px">
               (La compta vous donne des boutons ...)
             </div>
           </div>
@@ -326,27 +246,9 @@
       </div>
 
       <div style="display: flex; flex-direction: column; margin: 30px">
-        <img
-          style="width: 100px; display: block; margin: 0 auto 15px auto"
-          src="assets/images/icons/bourse.png"
-        />
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div
-            style="
-              background-color: #2a356c;
-              border-radius: 15px;
-              width: 45px;
-              height: 45px;
-              position: relative;
-            "
-          >
+        <img style="width: 100px; display: block; margin: 0 auto 15px auto" src="assets/images/icons/bourse.png" />
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div style="background-color: #2a356c; border-radius: 15px; width: 45px; height: 45px; position: relative">
             <p
               style="
                 font-family: 'EncodeSans Medium', serif;
@@ -363,21 +265,10 @@
             </p>
           </div>
           <div style="flex-direction: column; display: flex">
-            <div
-              style="
-                font-family: 'MadeTommy Medium', sans-serif;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Medium', sans-serif; margin-left: 10px">
               Vous souhaitez optimiser vos impôts.
             </div>
-            <div
-              style="
-                font-family: 'MadeTommy Regular', sans-serif;
-                font-size: 15px;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Regular', sans-serif; font-size: 15px; margin-left: 10px">
               (On ne va pas se mentir.)
             </div>
           </div>
@@ -385,27 +276,9 @@
       </div>
 
       <div style="display: flex; flex-direction: column; margin: 30px">
-        <img
-          style="width: 100px; display: block; margin: 0 auto 15px auto"
-          src="assets/images/icons/de-largent.png"
-        />
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div
-            style="
-              background-color: #2a356c;
-              border-radius: 15px;
-              width: 45px;
-              height: 45px;
-              position: relative;
-            "
-          >
+        <img style="width: 100px; display: block; margin: 0 auto 15px auto" src="assets/images/icons/de-largent.png" />
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div style="background-color: #2a356c; border-radius: 15px; width: 45px; height: 45px; position: relative">
             <p
               style="
                 font-family: 'EncodeSans Medium', serif;
@@ -422,21 +295,10 @@
             </p>
           </div>
           <div style="flex-direction: column; display: flex">
-            <div
-              style="
-                font-family: 'MadeTommy Medium', sans-serif;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Medium', sans-serif; margin-left: 10px">
               Vous souhaitez optimiser votre rémunération.
             </div>
-            <div
-              style="
-                font-family: 'MadeTommy Regular', sans-serif;
-                font-size: 15px;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Regular', sans-serif; font-size: 15px; margin-left: 10px">
               (Tout travail mérite salaire.)
             </div>
           </div>
@@ -448,23 +310,8 @@
           style="width: 100px; display: block; margin: 0 auto 15px auto"
           src="assets/images/icons/nomade-numerique.png"
         />
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div
-            style="
-              background-color: #2a356c;
-              border-radius: 15px;
-              width: 45px;
-              height: 45px;
-              position: relative;
-            "
-          >
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div style="background-color: #2a356c; border-radius: 15px; width: 45px; height: 45px; position: relative">
             <p
               style="
                 font-family: 'EncodeSans Medium', serif;
@@ -481,21 +328,10 @@
             </p>
           </div>
           <div style="flex-direction: column; display: flex">
-            <div
-              style="
-                font-family: 'MadeTommy Medium', sans-serif;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Medium', sans-serif; margin-left: 10px">
               Vous voulez vous concentrer sur votre coeur de métier.
             </div>
-            <div
-              style="
-                font-family: 'MadeTommy Regular', sans-serif;
-                font-size: 15px;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Regular', sans-serif; font-size: 15px; margin-left: 10px">
               (Mettre ses atouts au profit de la productivité.)
             </div>
           </div>
@@ -503,27 +339,9 @@
       </div>
 
       <div style="display: flex; flex-direction: column; margin: 30px">
-        <img
-          style="width: 100px; display: block; margin: 0 auto 15px auto"
-          src="assets/images/icons/thinking.png"
-        />
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div
-            style="
-              background-color: #2a356c;
-              border-radius: 15px;
-              width: 45px;
-              height: 45px;
-              position: relative;
-            "
-          >
+        <img style="width: 100px; display: block; margin: 0 auto 15px auto" src="assets/images/icons/thinking.png" />
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div style="background-color: #2a356c; border-radius: 15px; width: 45px; height: 45px; position: relative">
             <p
               style="
                 font-family: 'EncodeSans Medium', serif;
@@ -540,21 +358,10 @@
             </p>
           </div>
           <div style="flex-direction: column; display: flex">
-            <div
-              style="
-                font-family: 'MadeTommy Medium', sans-serif;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Medium', sans-serif; margin-left: 10px">
               Ou encore pour bien d'autres raisons.
             </div>
-            <div
-              style="
-                font-family: 'MadeTommy Regular', sans-serif;
-                font-size: 15px;
-                margin-left: 10px;
-              "
-            >
+            <div style="font-family: 'MadeTommy Regular', sans-serif; font-size: 15px; margin-left: 10px">
               (Liste non-exhaustive ...)
             </div>
           </div>
@@ -563,76 +370,38 @@
     </div>
   </div>
 
-  <div
-    id="section3part1"
-    style="
-      display: flex;
-      flex-direction: row;
-      margin-top: 50px;
-      align-items: center;
-    "
-  >
+  <div id="section3part1" style="display: flex; flex-direction: row; margin-top: 50px; align-items: center">
     <div style="height: 60vh">
       <!--      <img
         id="carImage"
         style="width: 1100px; height: 1100px; margin-left: -300px"
         src="assets/images/template4/car.svg"
       />-->
-      <ng-lottie
-        id="carImage"
-        [options]="{ path: 'assets/lotties/computer-finance.json' }"
-      ></ng-lottie>
+      <ng-lottie id="carImage" [options]="{ path: 'assets/lotties/computer-finance.json' }"></ng-lottie>
     </div>
-    <div
-      style="
-        flex-basis: 50%;
-        margin-left: 50px;
-        margin-right: 10px;
-        align-items: center;
-      "
-    >
-      <div class="titleGlobal" style="margin-top: 150px">
-        Chez Accounting Luxembourg Institute,
-      </div>
+    <div style="flex-basis: 50%; margin-left: 50px; margin-right: 10px; align-items: center">
+      <div class="titleGlobal" style="margin-top: 150px">Chez Accounting Luxembourg Institute,</div>
       <div class="descriptionGlobal" style="margin-top: 50px">
-        Nous avons le souci de vos intérêts personnels et commerciaux. Notre
-        objectif est de vous fournir des outils et conseils judicieux pour
-        faciliter vos prises de décisions.
+        Nous avons le souci de vos intérêts personnels et commerciaux. Notre objectif est de vous fournir des outils et
+        conseils judicieux pour faciliter vos prises de décisions.
       </div>
 
-      <div
-        class="titleGlobal"
-        style="font-size: 20px; color: #2a356c; margin-top: 30px"
-      >
-        <img
-          style="height: 60px; width: 60px; margin-right: 20px"
-          src="assets/images/icons/hommePc.png"
-        />
+      <div class="titleGlobal" style="font-size: 20px; color: #2a356c; margin-top: 30px">
+        <img style="height: 60px; width: 60px; margin-right: 20px" src="assets/images/icons/hommePc.png" />
         Gestion de la comptabilité et de la fiscalité de nos clients
       </div>
 
-      <div
-        class="titleGlobal"
-        style="font-size: 20px; color: #2a356c; margin-top: 30px"
-      >
-        <img
-          style="height: 60px; width: 60px; margin-right: 20px"
-          src="assets/images/icons/business2.png"
-        />Adaptation de nos services aux besoins de chacun
+      <div class="titleGlobal" style="font-size: 20px; color: #2a356c; margin-top: 30px">
+        <img style="height: 60px; width: 60px; margin-right: 20px" src="assets/images/icons/business2.png" />
+        Adaptation de nos services aux besoins de chacun
       </div>
-      <div
-        class="titleGlobal"
-        style="font-size: 20px; color: #2a356c; margin-top: 30px"
-      >
-        <img
-          style="height: 60px; width: 60px; margin-right: 20px"
-          src="assets/images/icons/business3.png"
-        />Votre comptabilité est entre de bonnes mains.
+      <div class="titleGlobal" style="font-size: 20px; color: #2a356c; margin-top: 30px">
+        <img style="height: 60px; width: 60px; margin-right: 20px" src="assets/images/icons/business3.png" />
+        Votre comptabilité est entre de bonnes mains.
       </div>
 
       <div class="descriptionGlobal" style="margin-top: 30px">
-        Contactez-nous et commencez à vous occuper de ce qui est vraiment
-        important pour vous.
+        Contactez-nous et commencez à vous occuper de ce qui est vraiment important pour vous.
       </div>
     </div>
   </div>
@@ -648,16 +417,7 @@
     "
     src="assets/svg/step2-3.svg"
   />
-  <div
-    style="
-      position: absolute;
-      right: auto;
-      bottom: auto;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-    "
-  >
+  <div style="position: absolute; right: auto; bottom: auto; overflow: hidden; width: 100%; height: 100%">
     <img
       style="
         width: 700px;
@@ -673,38 +433,20 @@
     />
   </div>
 
-  <div
-    class="customContainerRight"
-    id="customContainerRight"
-    style="margin-top: 200px"
-  >
+  <div class="customContainerRight" id="customContainerRight" style="margin-top: 200px">
     <div style="display: flex; flex-direction: row" id="section3part2">
-      <div
-        id="section3part2Div1"
-        style="
-          flex-basis: 50%;
-          margin-left: 200px;
-          margin-right: 10px;
-          align-items: center;
-        "
-      >
-        <div class="titleGlobal" style="margin-top: 150px">
-          Quand l'expert-comptable est aussi votre coach
-        </div>
+      <div id="section3part2Div1" style="flex-basis: 50%; margin-left: 200px; margin-right: 10px; align-items: center">
+        <div class="titleGlobal" style="margin-top: 150px">Quand l'expert-comptable est aussi votre coach</div>
         <div class="descriptionGlobal" style="margin-top: 50px">
-          Chez Accounting Luxembourg Institute, nous avons la conviction que
-          pour que votre activité soit prospère, il faut être à son écoute.
+          Chez Accounting Luxembourg Institute, nous avons la conviction que pour que votre activité soit prospère, il
+          faut être à son écoute.
         </div>
-        <div
-          class="titleGlobal"
-          style="font-size: 40px; color: #2a356c; margin-top: 30px"
-        >
+        <div class="titleGlobal" style="font-size: 40px; color: #2a356c; margin-top: 30px">
           Et votre activité, c'est vous !
         </div>
         <div class="descriptionGlobal" style="margin-top: 30px">
-          C'est pourquoi notre ambition, en plus des missions comptables,
-          juridiques et fiscales, est de vous accompagner à faire passer votre
-          business à l'étape supérieure.
+          C'est pourquoi notre ambition, en plus des missions comptables, juridiques et fiscales, est de vous
+          accompagner à faire passer votre business à l'étape supérieure.
         </div>
       </div>
       <div>
@@ -718,19 +460,10 @@
   </div>
   <img
     id="path2"
-    style="
-      width: 220px;
-      position: absolute;
-      margin-top: -100px;
-      margin-right: 100px;
-      right: 0;
-    "
+    style="width: 220px; position: absolute; margin-top: -100px; margin-right: 100px; right: 0"
     src="assets/svg/step1-2.svg"
   />
-  <div
-    style="display: flex; flex-direction: row; margin-top: 50px"
-    id="section3part3"
-  >
+  <div style="display: flex; flex-direction: row; margin-top: 50px" id="section3part3">
     <div style="">
       <img
         id="carImage3"
@@ -739,84 +472,40 @@
       />
     </div>
     <div style="flex-basis: 50%; margin-left: 50px; margin-right: 10px">
-      <div class="titleGlobal" style="margin-top: 150px">
-        La vie est un apprentissage qui ne finit jamais
-      </div>
+      <div class="titleGlobal" style="margin-top: 150px">La vie est un apprentissage qui ne finit jamais</div>
       <div class="descriptionGlobal" style="margin-top: 50px">
-        Dites nous ce que vous faites, nous identifierons ce dont vous avez
-        besoin.
+        Dites nous ce que vous faites, nous identifierons ce dont vous avez besoin.
       </div>
-      <div
-        style="
-          flex-direction: row;
-          display: flex;
-          align-items: center;
-          margin-top: 30px;
-        "
-      >
+      <div style="flex-direction: row; display: flex; align-items: center; margin-top: 30px">
         <div>
-          <img
-            style="width: 60px; height: 60px"
-            src="assets/images/icons/goal.png"
-          />
+          <img style="width: 60px; height: 60px" src="assets/images/icons/goal.png" />
         </div>
-        <div
-          class="titleGlobal"
-          style="font-size: 20px; color: #2a356c; margin-left: 20px"
-        >
-          Nous définissons ensemble vos objectifs. Et mettons un plan de
-          formation sur mesure et adapté à vos besoins.
+        <div class="titleGlobal" style="font-size: 20px; color: #2a356c; margin-left: 20px">
+          Nous définissons ensemble vos objectifs. Et mettons un plan de formation sur mesure et adapté à vos besoins.
         </div>
       </div>
 
-      <div
-        style="
-          flex-direction: row;
-          display: flex;
-          align-items: center;
-          margin-top: 30px;
-        "
-      >
+      <div style="flex-direction: row; display: flex; align-items: center; margin-top: 30px">
         <div>
-          <img
-            style="width: 60px; height: 60px"
-            src="assets/images/icons/technique.png"
-          />
+          <img style="width: 60px; height: 60px" src="assets/images/icons/technique.png" />
         </div>
-        <div
-          class="titleGlobal"
-          style="font-size: 20px; color: #2a356c; margin-left: 20px"
-        >
-          Ensemble, créons des moments d'apprentissage qui seront axés sur les
-          compétences techniques (hardskills)
+        <div class="titleGlobal" style="font-size: 20px; color: #2a356c; margin-left: 20px">
+          Ensemble, créons des moments d'apprentissage qui seront axés sur les compétences techniques (hardskills)
         </div>
       </div>
 
-      <div
-        style="
-          flex-direction: row;
-          display: flex;
-          align-items: center;
-          margin-top: 30px;
-        "
-      >
+      <div style="flex-direction: row; display: flex; align-items: center; margin-top: 30px">
         <div>
-          <img
-            style="width: 60px; height: 60px"
-            src="assets/images/icons/skill.png"
-          />
+          <img style="width: 60px; height: 60px" src="assets/images/icons/skill.png" />
         </div>
-        <div
-          class="titleGlobal"
-          style="font-size: 20px; color: #2a356c; margin-left: 20px"
-        >
+        <div class="titleGlobal" style="font-size: 20px; color: #2a356c; margin-left: 20px">
           Mais aussi sur les compétences générales (softskills).
         </div>
       </div>
 
       <div class="descriptionGlobal" style="margin-top: 30px">
-        "On peut très bien se former sur des normes comptables, et en parallèle
-        améliorer sa prise de parole en publique."
+        "On peut très bien se former sur des normes comptables, et en parallèle améliorer sa prise de parole en
+        publique."
       </div>
     </div>
   </div>
@@ -832,44 +521,21 @@
       margin-top: 30px;
     "
   >
-    <div
-      style="
-        font-family: 'MadeTommy Medium', sans-serif;
-        font-size: 50px;
-        text-align: center;
-        margin-bottom: 50px;
-      "
-    >
+    <div style="font-family: 'MadeTommy Medium', sans-serif; font-size: 50px; text-align: center; margin-bottom: 50px">
       <div style="height: 60vh">
-        <ng-lottie
-          [options]="{ path: 'assets/lotties/biker.json' }"
-        ></ng-lottie>
+        <ng-lottie [options]="{ path: 'assets/lotties/biker.json' }"></ng-lottie>
       </div>
       Nos missions
     </div>
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-      "
-    >
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap">
       <app-mission-container></app-mission-container>
+      <app-mission-container2></app-mission-container2>
+      <app-mission-container3></app-mission-container3>
     </div>
   </div>
 
-  <div
-    style="
-      font-family: 'MadeTommy Medium', sans-serif;
-      font-size: 40px;
-      text-align: center;
-    "
-  >
-    <img
-      src="assets/images/icons/avis-client.png"
-      style="width: 100px; display: block; margin: 0 auto 15px auto"
-    />
+  <div style="font-family: 'MadeTommy Medium', sans-serif; font-size: 40px; text-align: center; margin-top: 100px">
+    <img src="assets/images/icons/avis-client.png" style="width: 100px; display: block; margin: 0 auto 15px auto" />
     Ils nous recommandent :
   </div>
   <app-carousel></app-carousel>
@@ -883,62 +549,19 @@
       padding-top: 3rem;
     "
   >
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      "
-    >
-      <img
-        style="height: 50px; width: 50px; margin-right: 40px"
-        src="assets/images/icons/facebook.svg"
-      />
-      <div
-        style="
-          height: 120px;
-          width: 120px;
-          border-radius: 60px;
-          background-color: #fde3d7;
-          text-align: center;
-        "
-      >
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+      <img style="height: 50px; width: 50px; margin-right: 40px" src="assets/images/icons/facebook.svg" />
+      <div style="height: 120px; width: 120px; border-radius: 60px; background-color: #fde3d7; text-align: center">
         LOGO
       </div>
-      <img
-        style="height: 50px; width: 50px; margin-left: 40px"
-        src="assets/images/icons/linkedin.svg"
-      />
+      <img style="height: 50px; width: 50px; margin-left: 40px" src="assets/images/icons/linkedin.svg" />
     </div>
-    <div
-      style="
-        color: #fd6c43;
-        font-family: 'MadeTommy Regular', serif;
-        text-align: center;
-        margin-top: 100px;
-      "
-    >
+    <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; text-align: center; margin-top: 100px">
       Me contacter :
     </div>
 
-    <div
-      style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-      "
-    >
-      <div
-        style="
-          color: #fd6c43;
-          font-family: 'MadeTommy Regular', serif;
-          position: absolute;
-          left: 10%;
-        "
-      >
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 20px">
+      <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; position: absolute; left: 10%">
         Adresse
         <div>4 rue de la Fleur</div>
       </div>
@@ -958,14 +581,7 @@
           line-height: 80px;
         "
       >
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-          "
-        >
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
           <div
             id="avatarContactButton"
             style="
@@ -979,14 +595,7 @@
           <div style="margin-left: 5px">Nouveau message</div>
         </div>
       </div>
-      <div
-        style="
-          color: #fd6c43;
-          font-family: 'MadeTommy Regular', serif;
-          position: absolute;
-          right: 10%;
-        "
-      >
+      <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; position: absolute; right: 10%">
         Téléphone
         <div>06 00 00 00 00</div>
       </div>

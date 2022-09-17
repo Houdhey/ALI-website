@@ -1,0 +1,21 @@
+.greenContainer {
+  cursor: pointer;
+  width: 300px;
+  background-color: #daf0f7;
+  display: flex;
+  flex-direction: column;
+  --content-width: 100%;
+  --gap: 0px;
+  border-style: solid;
+  border-width: 1px 1px 6px 6px;
+  border-color: #120459;
+  border-radius: 15px 15px 15px 15px;
+  color: #120459;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.greenContainer:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: #daf0f7;
+  border-color: #fd6c66;
+}
