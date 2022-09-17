@@ -24,6 +24,7 @@ import {
 } from '@angular/common/http';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
+import { MissionContainerComponent } from './mission-container/mission-container.component';
 export function playerFactory() {
   return player;
 }
@@ -35,6 +36,7 @@ export function playerFactory() {
     DashboardComponent,
     CarouselComponent,
     FormulaireComponent,
+    MissionContainerComponent,
   ],
   imports: [
     BrowserModule,

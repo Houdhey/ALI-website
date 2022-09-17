@@ -24,30 +24,26 @@
         <div class="col-12">
           <nav class="main-nav">
             <a href="index.html" class="logo">
-              <h4>ALI</h4>
+              <img
+                style="width: 60px; height: 60px"
+                src="assets/images/logo/logo3.png"
+              />
             </a>
 
             <ul class="nav">
               <li class="scroll-to-section">
-                <a href="#top" class="active">Home</a>
-              </li>
-              <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section">
-                <a href="#services">Services</a>
+                <a href="#top" class="active">Accueil</a>
               </li>
               <li class="scroll-to-section">
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-              <li class="scroll-to-section">
-                <a href="#contact">Message Us</a>
+                <a href="#missions">Missions</a>
               </li>
               <li class="scroll-to-section">
                 <div class="main-red-button">
-                  <a href="#contact">Contact Now</a>
+                  <a>Se connecter</a>
                 </div>
               </li>
             </ul>
+
             <a class="menu-trigger">
               <span>Menu</span>
             </a>
@@ -257,7 +253,7 @@
         src="assets/images/icons/surprise-box.png"
         style="width: 100px; display: block; margin: 0 auto 15px auto"
       />
-      Vous n’êtes pas ici par hasard.
+      Vous n'êtes pas ici par hasard.
       <div>
         Nos experts-comptables et nos équipes sont faites pour vous si :
       </div>
@@ -822,6 +818,44 @@
         "On peut très bien se former sur des normes comptables, et en parallèle
         améliorer sa prise de parole en publique."
       </div>
+    </div>
+  </div>
+
+  <div
+    style="
+      background-color: white;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+
+      border-radius: 40px;
+      margin-top: 30px;
+    "
+  >
+    <div
+      style="
+        font-family: 'MadeTommy Medium', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+      "
+    >
+      <div style="height: 60vh">
+        <ng-lottie
+          [options]="{ path: 'assets/lotties/biker.json' }"
+        ></ng-lottie>
+      </div>
+      Nos missions
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      "
+    >
+      <app-mission-container></app-mission-container>
     </div>
   </div>
 
