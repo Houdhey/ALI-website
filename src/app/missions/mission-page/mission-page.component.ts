@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-mission-page',
   templateUrl: './mission-page.component.html',
@@ -9,6 +9,12 @@ import { Router } from '@angular/router';
 export class MissionPageComponent implements OnInit {
   constructor(private router: Router) {}
 
+  modalOpened;
+
+  openMenu() {
+    $('.header-area .nav').slideToggle(200);
+    $('.menu-trigger').toggleClass('active');
+  }
   goToHome() {
     this.router.navigateByUrl('/homepage');
   }
@@ -27,5 +33,32 @@ export class MissionPageComponent implements OnInit {
 
       next.setAttribute('data-show', '');
     }, 2500);
+  }
+
+  openForm() {
+    console.log('opening form ');
+    let modal_wrapper2 = document.getElementById('modal_wrapper2');
+    modal_wrapper2.classList.add('active');
+    this.modalOpened = true;
+  }
+
+  closeForm() {
+    let modal_wrapper2 = document.getElementById('modal_wrapper2');
+    modal_wrapper2.classList.remove('active');
+    this.modalOpened = false;
+  }
+
+  makeItSmile() {
+    const avatar = document.getElementById('avatarContactButton').style;
+    const container = document.getElementById('contactContainer').style;
+    avatar.backgroundImage = 'url("../../assets/images/icons/goodbye.png")';
+    container.cursor = 'pointer';
+  }
+
+  makeItCry() {
+    const avatar = document.getElementById('avatarContactButton').style;
+    const container = document.getElementById('contactContainer').style;
+    avatar.backgroundImage = 'url("../../assets/images/icons/crying.png")';
+    container.cursor = 'none';
   }
 }

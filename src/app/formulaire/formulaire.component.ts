@@ -8,12 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./formulaire.component.scss'],
 })
 export class FormulaireComponent implements OnInit {
-  constructor(
-    public variableStateService: VariableStateService,
-    private router: Router
-  ) {}
+  constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('on init');
+  }
 
   doneButton() {
     let form_3 = document.getElementById('form_3');

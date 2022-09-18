@@ -1,4 +1,4 @@
-<body style="background-color: #f5f4ff">
+<body style="background-color: #f5f4ff; min-height: 300vh">
   <!-- ***** Preloader Start ***** -->
   <!--  <div id="js-preloader" class="js-preloader">-->
   <!--    <div class="preloader-inner">-->
@@ -37,7 +37,7 @@
               </li>
             </ul>
 
-            <a class="menu-trigger">
+            <a (click)="openMenu()" class="menu-trigger">
               <span>Menu</span>
             </a>
           </nav>
@@ -102,46 +102,307 @@
     </div>
   </div>
 
-  <div id="flexContainer1" class="fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="margin-left: 80px">
-    <div class="container customContainer">
-      <div class="flexContainer" id="myFlexContainer">
-        <div class="wrap">
-          <div class="theMagicBorder">
-            <div class="logoMagic">
-              <img src="assets/images/template4/expertiseComptableBlue.svg" />
-            </div>
-            <div class="titleMagic">Expertise Comptable</div>
-            <div class="titleDescription">
-              Nous offrons à nos clients une attention personnalisée et l'attention nécessaire pour assurer que leurs
-              projets soient menés à bien.
-            </div>
-          </div>
+  <div id="missionsPart1" class="fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div
+        style="
+          background-color: #b1d4f0;
+          margin-top: 100px;
+          font-family: 'MadeTommy Medium', sans-serif;
+          border-style: solid;
+          border-width: 1px 1px 1px 1px;
+          border-color: #9fa3ad33;
+          border-radius: 30px 30px 30px 30px;
+          padding: 20px;
+        "
+      >
+        <div style="font-size: 36px; text-align: left">
+          1. Expertises
+          <mark>comptables et fiscales</mark>
         </div>
+        <div style="display: flex; flex-direction: row">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 65%;
+              font-family: 'MadeTommy Regular', serif;
+              color: #120459;
+            "
+          >
+            <div style="margin-top: 20px">
+              Vos attentes : du conseil, ne pas perdre de temps et surtout ne pas prendre de risques sur la création de
+              société, sur votre compta, et surtout concernant vos obligations fiscales et sociales.
+            </div>
+            <div style="margin-top: 20px"><b>Notre promesse :</b></div>
+            <div>- Une charge mentale libérée.</div>
+            <div>- Vous pourrez vous concentrer sur votre métier</div>
+            <div>- Un gain de temps et d’énergie</div>
 
-        <div class="wrap" style="display: flex; flex-direction: column; justify-content: space-between">
-          <div class="theMagicBorder">
-            <div class="logoMagic" style="flex: 0.5">
-              <img src="assets/images/template4/formationBlue.svg" />
+            <div style="margin-top: 20px"><b>Nos interventions pour vous :</b></div>
+            <div>
+              - Choix du statut juridique, démarches légales et administratives. Immatriculation de votre société.
+              <div>
+                <b>En bref :</b>
+                la création de votre entreprise, le stress en moins.
+              </div>
             </div>
-            <div class="titleMagic" style="flex: 0.5">Formation</div>
-            <div class="titleDescription">
-              A nos côtés, vous aurez l'opportunité de développer vos apprentissages personnels et professionnels.
+            <div>- Des conseils avisés, francs, et directs. #optimisonsvotrefiscalité</div>
+            <div>
+              -
+              <b>Pilotage d’entreprise :</b>
+              Des outils connectés, des tableaux de bords imagés,
+              <div>
+                qui vous aideront à prendre les meilleures décisions au quotidien, dans le respect d’une stratégie bien
+                élaborée.
+              </div>
             </div>
           </div>
+          <div style="display: flex; flex-direction: column; width: 35%; justify-content: center">
+            <div style="height: 200px">
+              <ng-lottie [options]="{ path: 'assets/lotties/breath.json' }"></ng-lottie>
+            </div>
+            <button style="margin-top: 30px" class="learn-more">Contacter un expert</button>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="wrap">
-          <div class="theMagicBorder">
-            <div class="logoMagic">
-              <img src="assets/images/template4/jogging.svg" />
+  <div id="missionsPart2" style="margin-top: 30px" class="fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div
+        style="
+          background-color: #fffaee;
+          margin-top: 100px;
+          font-family: 'MadeTommy Medium', sans-serif;
+          border-style: solid;
+          border-width: 1px 1px 1px 1px;
+          border-color: #9fa3ad33;
+          border-radius: 30px 30px 30px 30px;
+          padding: 20px;
+        "
+      >
+        <div style="display: flex; flex-direction: row">
+          <div style="display: flex; flex-direction: column; width: 35%; justify-content: center">
+            <div style="height: 200px">
+              <ng-lottie [options]="{ path: 'assets/lotties/breath.json' }"></ng-lottie>
             </div>
-            <div class="titleMagic">Coaching</div>
-            <div class="titleDescription">
-              Les clients reçoivent les outils et conseils nécessaires pour répondre à tous leurs besoins comptables,
-              juridiques et fiscaux.
+            <button style="margin-top: 30px" class="learn-more">Contacter un expert</button>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 65%;
+              font-family: 'MadeTommy Regular', serif;
+              color: #120459;
+              margin-left: 20px;
+            "
+          >
+            <div style="font-size: 36px; font-family: 'MadeTommy Medium', serif">
+              2. Coaching pour
+              <mark>entrepreneurs et dirigeants</mark>
             </div>
+            <div style="margin-top: 20px">
+              Vous êtes entrepreneur ou souhaitez le devenir : Vous avez créé une entreprise dont vous êtes fier. Dans
+              ce projet, vous y avez mis du cœur, de l’énergie, et beaucoup de sacrifices.
+            </div>
+            <div style="margin-top: 5px">
+              Vous vous battez chaque jour pour développer votre société, la faire grandir… seulement voilà..
+            </div>
+            <div style="margin-top: 5px">
+              Quand on entreprend, on a vite le « nez dans le guidon ». On se retrouve à passer la majeure partie de son
+              temps à régler des problèmes quotidiens et des urgences.
+            </div>
+
+            <div style="margin-top: 5px">
+              Les problématiques auxquelles sont confrontés les entrepreneurs sont très diverses. Parmi elles, voici une
+              liste non-exhaustive des sujets sur lesquels le coaching est un allié de choix :
+            </div>
+            <div style="margin-top: 15px">• Fixer ses tarifs</div>
+            <div style="margin-top: 5px">• Revenus instables</div>
+            <div style="margin-top: 5px">• Ressources humaines (une galère)</div>
+            <div style="margin-top: 5px">• Démarchage de la clientèle</div>
+            <div style="margin-top: 5px">• Les défauts de paiements des clients</div>
+            <div style="margin-top: 5px">• La gestion du temps</div>
+            <div style="margin-top: 5px">• La gestion administrative</div>
+            <div style="margin-top: 5px">• La croissance de l’entreprise</div>
+            <div style="margin-top: 5px">• Coaching Cohésion d’équipes</div>
+            <div style="margin-top: 5px">• Les difficultés de financement</div>
+            <div style="margin-top: 5px">• La solitude de l’entrepreneur</div>
+            <div style="margin-top: 5px">
+              • Paix dans le ménage/ Absence de soutien du conjoint (ou de la conjointe)
+            </div>
+            <div style="margin-top: 5px">• Le doute</div>
+            <div style="margin-top: 5px">• ...</div>
+
+            <div style="margin-top: 20px"><b>En bref :</b></div>
+            <div>
+              La puissance du coaching réside dans le fait que chaque pan de votre vie personnelle ou professionnelle
+              peut être abordé pour vous permettre une prise de hauteur sur votre situation
+              <div>et tirer le meilleur de vos ressources inexploitées.</div>
+            </div>
+            <div style="margin-top: 20px">Pensez-vous que vous êtes au maximum de votre potentiel ?</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="missionsPart3" style="margin-top: 30px" class="fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div
+        style="
+          background-color: #b1d4f0;
+          margin-top: 100px;
+          font-family: 'MadeTommy Medium', sans-serif;
+          border-style: solid;
+          border-width: 1px 1px 1px 1px;
+          border-color: #9fa3ad33;
+          border-radius: 30px 30px 30px 30px;
+          padding: 20px;
+        "
+      >
+        <div style="font-size: 36px; text-align: left; color: #120459">
+          3. Formations
+          <mark>de vos équipes</mark>
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 65%;
+              font-family: 'MadeTommy Regular', serif;
+              color: #120459;
+            "
+          >
+            <div style="margin-top: 20px">
+              En tant que formateurs certifiés, nous vous proposons des formations pour :
+            </div>
+            <div style="margin-top: 20px"><b>- Les entrepreneurs et dirigeants :</b></div>
+            <div>Ces formations seront courtes, ludiques et interactives.</div>
+            <div style="margin-top: 5px">
+              <b>Notre objectif :</b>
+              vous initier à la comptabilité dans les grandes lignes, et plus largement à la gestion de votre entreprise
+              (c’est toujours plus sympa de comprendre ce que les chiffres nous disent.)
+            </div>
+            <div style="margin-top: 5px">
+              Nous ferons un tour d’horizon sur la conjoncture actuelle, sur l’environnement lié à votre secteur
+              d’activité, et vous donnerons les clés pour mieux piloter votre société, à votre rythme !
+            </div>
+
+            <div style="margin-top: 20px"><b>- Les salariés du tertiaire :</b></div>
+            <div style="margin-top: 10px">
+              Ces formations seront doubles : axées sur la technique, et couplées à des formations « soft skills ».
+            </div>
+
+            <div style="margin-top: 5px">
+              Si un collaborateur comptable souhaite s’épanouir dans le démarchage commercial, nous lui préparons un
+              accompagnement sur mesure, et personnalisé. Il s’agit d’une formation qui sera faite sous forme de
+              mentorat.
+            </div>
+
+            <div style="margin-top: 10px">
+              <b>Autre exemple de formation personnalisée :</b>
+              le collaborateur souhaite se perfectionner sur le logiciel que vous utilisez, et en parallèle, il
+              s’épanouirait à faire des présentations de ses travaux aux investisseurs ? Couplez sa formation logicielle
+              à une formation sur la prise de parole en public.
+            </div>
+
+            <div style="margin-top: 5px">
+              Vous avez un besoin spécifique en formation, partagez donc cela avec nous, nous enrichissons notre
+              catalogue de façon continue, pour rester à la pointe des collaborateurs de demain.
+            </div>
+
+            <div style="margin-top: 20px">
+              <b>Notre ambition :</b>
+              Level up de vos collaborateurs ! Épanouissement garanti ! Rétention des bons profils assurée.
+            </div>
+
+            <div style="margin-top: 5px">
+              <b>Notre promesse :</b>
+              repousser les limites de la formation !
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; width: 35%; justify-content: center; margin-left: 20px">
+            <div style="height: 200px">
+              <ng-lottie [options]="{ path: 'assets/lotties/breath.json' }"></ng-lottie>
+            </div>
+            <button style="margin-top: 30px" class="learn-more">Contacter un expert</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    style="
+      margin-top: 100px;
+      background-image: url('assets/landscapes/noiselightBlue.jfif');
+      background-size: cover;
+      height: 500px;
+      padding-top: 3rem;
+    "
+  >
+    <app-batman></app-batman>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+      <img style="height: 50px; width: 50px; margin-right: 40px" src="assets/images/icons/facebook.svg" />
+      <div style="height: 120px; width: 120px; border-radius: 60px; background-color: #fde3d7; text-align: center">
+        LOGO
+      </div>
+      <img style="height: 50px; width: 50px; margin-left: 40px" src="assets/images/icons/linkedin.svg" />
+    </div>
+    <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; text-align: center; margin-top: 100px">
+      Me contacter :
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 20px">
+      <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; position: absolute; left: 10%">
+        Adresse
+        <div>4 rue de la Fleur</div>
+      </div>
+      <div
+        id="contactContainer"
+        (mouseover)="makeItSmile()"
+        (mouseout)="makeItCry()"
+        (click)="openForm()"
+        style="
+          background-color: #fd6c43;
+          height: 80px;
+          width: 250px;
+          color: #fde3d7;
+          font-family: 'MadeTommy Medium', serif;
+          text-align: center;
+          border-radius: 0.5rem;
+          line-height: 80px;
+        "
+      >
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div
+            id="avatarContactButton"
+            style="
+              background-image: url('../../assets/images/icons/crying.png');
+              background-size: cover;
+              width: 60px;
+              height: 60px;
+            "
+          ></div>
+
+          <div style="margin-left: 5px">Nouveau message</div>
+        </div>
+      </div>
+      <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; position: absolute; right: 10%">
+        Téléphone
+        <div>06 00 00 00 00</div>
+      </div>
+    </div>
+
+    <div id="modal_wrapper2" class="modal_wrapper2">
+      <div class="shadow2" (click)="closeForm()"></div>
+      <div class="success_wrap2">
+        <app-formulaire></app-formulaire>
       </div>
     </div>
   </div>

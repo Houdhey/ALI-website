@@ -3,7 +3,7 @@ import { map } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { VariableStateService } from '../services/variable-state.service';
 import { Router } from '@angular/router';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-testpage',
   templateUrl: './testpage.component.html',
@@ -14,13 +14,18 @@ export class TestpageComponent implements OnInit {
   modalOpened;
 
   public innerWidth: any;
+  openMenu() {
+    $('.header-area .nav').slideToggle(200);
+    $('.menu-trigger').toggleClass('active');
+  }
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
     this.resizeImage();
+
     setInterval(function () {
-      const show = document.querySelector('.word-apple[data-show]');
-      const next = show.nextElementSibling || document.querySelector('.word-apple:first-child');
-      const up = document.querySelector('.word-apple[data-up]');
+      const show = document.querySelector('.word-apple-home[data-show]');
+      const next = show.nextElementSibling || document.querySelector('.word-apple-home:first-child');
+      const up = document.querySelector('.word-apple-home[data-up]');
 
       if (up) {
         up.removeAttribute('data-up');

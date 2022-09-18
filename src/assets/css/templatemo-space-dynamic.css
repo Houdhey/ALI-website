@@ -28,7 +28,7 @@ Table of contents
 font & reset css
 ---------------------------------------------
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*
 ---------------------------------------------
 reset
@@ -100,7 +100,7 @@ figcaption {
 
 /* clear fix */
 .grid:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -122,7 +122,7 @@ figcaption {
 }
 
 .clearfix:after {
-  content: ".";
+  content: '.';
   display: block;
   clear: both;
   visibility: hidden;
@@ -165,7 +165,7 @@ hgroup {
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background-color: #fff;
   -ms-text-size-adjust: 100%;
@@ -210,7 +210,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 ::selection {
@@ -326,7 +326,7 @@ header
 }
 
 .background-header .nav li a.active {
-  color: #2a356c !important;
+  color: #fd6c43 !important;
 }
 
 .header-area {
@@ -423,7 +423,7 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-family: "MadeTommy Medium", sans-serif;
+  font-family: 'MadeTommy Medium', sans-serif;
   font-size: 15px;
   color: #2a2a2a;
   text-transform: capitalize;
@@ -463,8 +463,8 @@ header
 }
 
 .header-area .main-nav .nav li.submenu:after {
-  font-family: "MadeTommy Medium", sans-serif;
-  content: "\f107";
+  font-family: 'MadeTommy Medium', sans-serif;
+  content: '\f107';
   font-size: 12px;
   color: #2a2a2a;
   position: absolute;
@@ -486,8 +486,7 @@ header
   transform: translateY(+2em);
   visibility: hidden;
   z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 0.01s;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 .header-area .main-nav .nav li.submenu ul li {
@@ -592,7 +591,7 @@ header
 
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
-  content: "";
+  content: '';
 }
 
 .header-area .main-nav .menu-trigger span {
@@ -632,7 +631,7 @@ header
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  color: #fd6c43 !important;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -689,7 +688,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #2a356c !important;
+    color: #fd6c43 !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -908,7 +907,7 @@ Banner Style
 }
 
 .main-banner:after {
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -918,7 +917,7 @@ Banner Style
 }
 
 .main-banner:before {
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1113,11 +1112,7 @@ Services Style
 
 .our-services .progress-skill-bar .filled-bar {
   background: rgb(255, 77, 30);
-  background: linear-gradient(
-    105deg,
-    rgba(255, 77, 30, 1) 0%,
-    rgba(255, 44, 109, 1) 100%
-  );
+  background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
   height: 6px;
   border-radius: 3px;
   margin-bottom: -6px;
@@ -1172,11 +1167,7 @@ Portfolio
 
 .our-portfolio .hidden-content {
   background: rgb(255, 77, 30);
-  background: linear-gradient(
-    105deg,
-    rgba(255, 77, 30, 1) 0%,
-    rgba(255, 44, 109, 1) 100%
-  );
+  background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
@@ -1193,16 +1184,12 @@ Portfolio
   height: 20px;
   position: absolute;
   background: rgb(255, 77, 30);
-  content: "";
+  content: '';
   left: 50%;
   bottom: -8px;
   margin-left: -5px;
   transform: rotate(45deg);
-  background: linear-gradient(
-    105deg,
-    rgba(255, 52, 69, 1) 0%,
-    rgba(255, 51, 78, 1) 100%
-  );
+  background: linear-gradient(105deg, rgba(255, 52, 69, 1) 0%, rgba(255, 51, 78, 1) 100%);
   z-index: -1;
 }
 
@@ -1545,11 +1532,7 @@ responsive
   }
   .about-us .services .item {
     background: rgb(255, 77, 30);
-    background: linear-gradient(
-      105deg,
-      rgba(255, 77, 30, 1) 0%,
-      rgba(255, 44, 109, 1) 100%
-    );
+    background: linear-gradient(105deg, rgba(255, 77, 30, 1) 0%, rgba(255, 44, 109, 1) 100%);
     padding: 30px;
     border-radius: 20px;
     display: inline-block;
