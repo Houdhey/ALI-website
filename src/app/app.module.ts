@@ -24,6 +24,7 @@ import { MissionContainerComponent } from './missions/mission-container/mission-
 import { MissionContainer2Component } from './missions/mission-container2/mission-container2.component';
 import { MissionContainer3Component } from './missions/mission-container3/mission-container3.component';
 import { MissionPageComponent } from './missions/mission-page/mission-page.component';
+import { BatmanComponent } from './batman/batman.component';
 export function playerFactory() {
   return player;
 }
@@ -39,6 +40,7 @@ export function playerFactory() {
     MissionContainer2Component,
     MissionContainer3Component,
     MissionPageComponent,
+    BatmanComponent,
   ],
   imports: [
     BrowserModule,
