@@ -1,4 +1,4 @@
-@import "src/styles";
+@import 'src/styles';
 
 .flexContainer {
   display: flex;
@@ -9,7 +9,7 @@
   min-height: 250px;
 }
 .titleMagic {
-  font-family: "MadeTommy Medium", sans-serif;
+  font-family: 'MadeTommy Medium', sans-serif;
   font-size: 40px;
   margin-top: 50px;
   text-transform: lowercase;
@@ -18,7 +18,7 @@
   text-transform: uppercase;
 }
 .titleDescription {
-  font-family: "EncodeSans Regular", sans-serif;
+  font-family: 'EncodeSans Regular', sans-serif;
   font-size: 20px;
   color: #9690aa;
   margin-top: 50px;
@@ -30,30 +30,26 @@
 @mixin magic-border($width, $color, $duration, $direction) {
   position: relative;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: calc(100% + #{$width * 2});
     height: calc(100% + #{$width * 2});
     top: calc(#{$width}/ -1);
     left: calc(#{$width}/ -1);
-    background: linear-gradient(to right, $color 0%, $color 100%),
-      linear-gradient(to top, $color 50%, transparent 50%),
-      linear-gradient(to top, $color 50%, transparent 50%),
-      linear-gradient(to right, $color 0%, $color 100%),
+    background: linear-gradient(to right, $color 0%, $color 100%), linear-gradient(to top, $color 50%, transparent 50%),
+      linear-gradient(to top, $color 50%, transparent 50%), linear-gradient(to right, $color 0%, $color 100%),
       linear-gradient(to left, $color 0%, $color 100%);
     background-size: 100% $width, $width 200%, $width 200%, 0% $width, 0% $width;
     background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
     background-repeat: no-repeat, no-repeat;
-    transition: transform $duration ease-in-out,
-      background-position $duration ease-in-out,
+    transition: transform $duration ease-in-out, background-position $duration ease-in-out,
       background-size $duration ease-in-out;
     transform: scaleX(0) rotate(180deg * $direction);
     transition-delay: $duration * 2, $duration, 0s;
   }
   &:hover {
     &:before {
-      background-size: 200% $width, $width 400%, $width 400%, 55% $width,
-        55% $width;
+      background-size: 200% $width, $width 400%, $width 400%, 55% $width, 55% $width;
       background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
       transform: scaleX(1) rotate(180deg * $direction);
       transition-delay: 0s, $duration, $duration * 2;
@@ -64,22 +60,19 @@
 @mixin magic-border-mask($width, $duration, $background, $direction) {
   position: relative;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: calc(100% + #{$width * 2});
     height: calc(100% + #{$width * 2});
     top: calc(#{$width}/ -1);
     left: calc(#{$width}/ -1);
-    mask: linear-gradient(to right, #000 0%, #000 100%),
-      linear-gradient(to top, #000 50%, transparent 50%),
-      linear-gradient(to top, #000 50%, transparent 50%),
-      linear-gradient(to right, #000 0%, #000 100%),
+    mask: linear-gradient(to right, #000 0%, #000 100%), linear-gradient(to top, #000 50%, transparent 50%),
+      linear-gradient(to top, #000 50%, transparent 50%), linear-gradient(to right, #000 0%, #000 100%),
       linear-gradient(to left, #000 0%, #000 100%);
     mask-size: 100% $width, $width 200%, $width 200%, 0% $width, 0% $width;
     mask-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
     mask-repeat: no-repeat, no-repeat;
-    transition: transform $duration ease-in-out,
-      mask-position $duration ease-in-out, mask-size $duration ease-in-out;
+    transition: transform $duration ease-in-out, mask-position $duration ease-in-out, mask-size $duration ease-in-out;
     transform: scaleX(0) rotate(180deg * $direction);
     transition-delay: $duration * 2, $duration, 0s;
     background: $background;
@@ -106,15 +99,11 @@
     @include magic-border-mask(
       10px,
       0.4s,
-      linear-gradient(
-        to bottom,
-        rgba(42, 53, 108, 1) 0%,
-        rgba(245, 143, 106, 1) 100%
-      ),
+      linear-gradient(to bottom, rgba(42, 53, 108, 1) 0%, rgba(245, 143, 106, 1) 100%),
       0
     );
     align-self: flex-end;
-    font-family: "Oswald";
+    font-family: 'Oswald';
     margin: 20px;
     flex-grow: 1;
     cursor: pointer;
@@ -145,7 +134,7 @@
 }
 
 .titleGlobal {
-  font-family: "MadeTommy Medium", sans-serif;
+  font-family: 'MadeTommy Medium', sans-serif;
   font-size: 50px;
 }
 .titleGlobal:first-letter {
@@ -153,7 +142,7 @@
 }
 
 .descriptionGlobal {
-  font-family: "EncodeSans Regular", sans-serif;
+  font-family: 'EncodeSans Regular', sans-serif;
   font-size: 20px;
 }
 .descriptionGlobal:first-letter {
@@ -204,9 +193,8 @@
   -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   -o-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-  font-family: "Space Grotesk Bold", -apple-system, BlinkMacSystemFont, Roboto,
-    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Space Grotesk Bold', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: inherit;
   font-weight: 600;
   text-decoration: none;
@@ -275,4 +263,59 @@
 
 .modal_wrapper2.active .success_wrap2 {
   transform: translate(-50%, -50%);
+}
+
+:root {
+  --offset: 6px;
+}
+
+.mask {
+  height: 106px;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--offset);
+}
+
+.mask .word-apple {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100px;
+  padding-bottom: var(--offset);
+
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.mask .word-apple[data-show] {
+  transform: translateY(-100%);
+  transition: 0.5s transform ease-in-out;
+}
+
+.mask .word-apple[data-up] {
+  transform: translateY(-200%);
+  transition: 0.5s transform ease-in-out;
+}
+
+.mask .word-apple:nth-child(1) {
+  background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+}
+
+.mask .word-apple:nth-child(2) {
+  background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+}
+
+.mask .word-apple:nth-child(3) {
+  background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+}
+
+.mask .word-apple:nth-child(4) {
+  background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+}
+
+.mask .word-apple:nth-child(5) {
+  background-image: linear-gradient(45deg, #15a289 50%, #1a913e);
 }

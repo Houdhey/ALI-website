@@ -25,10 +25,10 @@
 
             <ul class="nav">
               <li class="scroll-to-section">
-                <a href="#top" class="active">Accueil</a>
+                <a (click)="goToHome()">Accueil</a>
               </li>
               <li class="scroll-to-section">
-                <a>Missions</a>
+                <a class="active">Missions</a>
               </li>
               <li class="scroll-to-section">
                 <div class="main-red-button">
@@ -75,8 +75,16 @@
                     margin-left: -100px;
                   "
                 >
-                  <div>Expertise-Comptable.</div>
-                  <div>Formation. Coaching.</div>
+                  <div>Nos Missions</div>
+                  <div style="width: 980px">
+                    <div class="mask">
+                      <div class="word-apple" data-show>Expertises comptables.</div>
+                      <div class="word-apple">Expertises fiscales.</div>
+                      <div class="word-apple">Coaching.</div>
+                      <div class="word-apple">Formations soft skills.</div>
+                      <div class="word-apple">Formations comptables.</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,7 +92,7 @@
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                 <img
                   style="transform: scale(3.5); margin-top: 155px; transform-origin: initial"
-                  src="assets/images/template4/hello3.svg"
+                  src="assets/images/missions/Missions.png"
                 />
               </div>
             </div>

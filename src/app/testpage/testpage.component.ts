@@ -17,6 +17,20 @@ export class TestpageComponent implements OnInit {
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
     this.resizeImage();
+    setInterval(function () {
+      const show = document.querySelector('.word-apple[data-show]');
+      const next = show.nextElementSibling || document.querySelector('.word-apple:first-child');
+      const up = document.querySelector('.word-apple[data-up]');
+
+      if (up) {
+        up.removeAttribute('data-up');
+      }
+
+      show.removeAttribute('data-show');
+      show.setAttribute('data-up', '');
+
+      next.setAttribute('data-show', '');
+    }, 2500);
   }
 
   scrollToId(id) {
@@ -62,6 +76,7 @@ export class TestpageComponent implements OnInit {
       console.log('resizing image');
 
       myId!.style.flexDirection = 'column';
+      myId!.style.alignItems = 'center';
 
       flexContainer1!.style.marginLeft = '0px';
 
