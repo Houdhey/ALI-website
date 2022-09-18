@@ -5,6 +5,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MissionPageComponent } from './missions/mission-page/mission-page.component';
 import { BatmanComponent } from './batman/batman.component';
+import { WhoComponent } from './who/who.component';
 
 const routes: Routes = [
   {
@@ -29,8 +30,8 @@ const routes: Routes = [
     component: MissionPageComponent,
   },
   {
-    path: 'batman',
-    component: BatmanComponent,
+    path: 'who',
+    component: WhoComponent,
   },
 ];
 

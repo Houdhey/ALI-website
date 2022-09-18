@@ -25,10 +25,14 @@
 
             <ul class="nav">
               <li class="scroll-to-section">
-                <a (click)="goToHome()">Accueil</a>
+                <a style="cursor: pointer" (click)="navigateTo('homepage')">Accueil</a>
               </li>
               <li class="scroll-to-section">
-                <a class="active">Missions</a>
+                <a style="cursor: pointer" class="active">Missions</a>
+              </li>
+
+              <li class="scroll-to-section">
+                <a style="cursor: pointer" (click)="navigateTo('who')">Qui sommes-nous ?</a>
               </li>
               <li class="scroll-to-section">
                 <div class="main-red-button">

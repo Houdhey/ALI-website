@@ -1,29 +1,26 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
 @Component({
-  selector: 'app-mission-page',
-  templateUrl: './mission-page.component.html',
-  styleUrls: ['./mission-page.component.scss'],
+  selector: 'app-who',
+  templateUrl: './who.component.html',
+  styleUrls: ['./who.component.scss'],
 })
-export class MissionPageComponent implements OnInit {
-  constructor(private router: Router) {}
-
+export class WhoComponent implements OnInit {
   modalOpened;
 
   openMenu() {
     $('.header-area .nav').slideToggle(200);
     $('.menu-trigger').toggleClass('active');
   }
-  navigateTo(url) {
-    this.router.navigateByUrl(url);
-  }
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
     window.scrollTo(0, 0);
     setInterval(function () {
-      const show = document.querySelector('.word-apple[data-show]');
-      const next = show.nextElementSibling || document.querySelector('.word-apple:first-child');
-      const up = document.querySelector('.word-apple[data-up]');
+      const show = document.querySelector('.word-apple3[data-show]');
+      const next = show.nextElementSibling || document.querySelector('.word-apple3:first-child');
+      const up = document.querySelector('.word-apple3[data-up]');
 
       if (up) {
         up.removeAttribute('data-up');
@@ -34,6 +31,9 @@ export class MissionPageComponent implements OnInit {
 
       next.setAttribute('data-show', '');
     }, 2500);
+  }
+  navigateTo(url) {
+    this.router.navigateByUrl(url);
   }
 
   openForm() {

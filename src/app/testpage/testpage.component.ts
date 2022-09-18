@@ -19,6 +19,7 @@ export class TestpageComponent implements OnInit {
     $('.menu-trigger').toggleClass('active');
   }
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.innerWidth = window.innerWidth;
     this.resizeImage();
 
@@ -51,8 +52,8 @@ export class TestpageComponent implements OnInit {
     this.resizeImage();
   }
 
-  goToMissions() {
-    this.router.navigateByUrl('/missions');
+  navigateTo(url) {
+    this.router.navigateByUrl(url);
   }
 
   makeItSmile() {

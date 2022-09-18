@@ -1,0 +1,179 @@
+<body style="background-color: #f5f4ff; min-height: 300vh">
+  <!-- ***** Preloader Start ***** -->
+  <!--  <div id="js-preloader" class="js-preloader">-->
+  <!--    <div class="preloader-inner">-->
+  <!--      <span class="dot"></span>-->
+  <!--      <div class="dots">-->
+  <!--        <span></span>-->
+  <!--        <span></span>-->
+  <!--        <span></span>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img style="width: 60px; height: 60px" src="assets/images/logo/logo3.png" />
+            </a>
+
+            <ul class="nav">
+              <li class="scroll-to-section">
+                <a style="cursor: pointer" (click)="navigateTo('homepage')">Accueil</a>
+              </li>
+              <li class="scroll-to-section">
+                <a (click)="navigateTo('missions')" style="cursor: pointer">Missions</a>
+              </li>
+
+              <li class="scroll-to-section">
+                <a style="cursor: pointer" class="active">Qui sommes-nous ?</a>
+              </li>
+              <li class="scroll-to-section">
+                <div class="main-red-button">
+                  <a>Se connecter</a>
+                </div>
+              </li>
+            </ul>
+
+            <a (click)="openMenu()" class="menu-trigger">
+              <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div
+    class="main-banner wow fadeIn"
+    id="top"
+    data-wow-duration="1s"
+    data-wow-delay="0.5s"
+    style="background-color: #f5f4ff"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center" style="z-index: 1">
+              <div
+                class="left-content header-text wow fadeInLeftBig"
+                data-wow-duration="1s"
+                data-wow-delay="1s"
+                style="position: absolute; top: 15%"
+              >
+                <div
+                  id="bigTitle"
+                  style="
+                    font-family: 'Gilroy ExtraBold', sans-serif;
+                    font-size: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: -100px;
+                  "
+                >
+                  <div>Qui sommes-nous?</div>
+                  <div style="width: 980px">
+                    <div class="mask">
+                      <div class="word-apple3" data-show>Abdelhadi.</div>
+                      <div class="word-apple3">Benjamin?</div>
+                      <div class="word-apple3">Benjam? Présent.</div>
+                      <div class="word-apple3">Erico.</div>
+                      <div class="word-apple3">Nat ?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img
+                  style="transform: scale(2.5); margin-top: 155px; transform-origin: initial"
+                  src="assets/images/who.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-mirror></app-mirror>
+
+  <div
+    style="
+      margin-top: 100px;
+      background-image: url('assets/landscapes/noiselightBlue.jfif');
+      background-size: cover;
+      height: 500px;
+      padding-top: 3rem;
+    "
+  >
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+      <img style="height: 50px; width: 50px; margin-right: 40px" src="assets/images/icons/facebook.svg" />
+      <div style="height: 120px; width: 120px; border-radius: 60px; background-color: #fde3d7; text-align: center">
+        LOGO
+      </div>
+      <img style="height: 50px; width: 50px; margin-left: 40px" src="assets/images/icons/linkedin.svg" />
+    </div>
+    <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; text-align: center; margin-top: 100px">
+      Me contacter :
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 20px">
+      <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; position: absolute; left: 10%">
+        Adresse
+        <div>4 rue de la Fleur</div>
+      </div>
+      <div
+        id="contactContainer"
+        (mouseover)="makeItSmile()"
+        (mouseout)="makeItCry()"
+        (click)="openForm()"
+        style="
+          background-color: #fd6c43;
+          height: 80px;
+          width: 250px;
+          color: #fde3d7;
+          font-family: 'MadeTommy Medium', serif;
+          text-align: center;
+          border-radius: 0.5rem;
+          line-height: 80px;
+        "
+      >
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+          <div
+            id="avatarContactButton"
+            style="
+              background-image: url('../../assets/images/icons/crying.png');
+              background-size: cover;
+              width: 60px;
+              height: 60px;
+            "
+          ></div>
+
+          <div style="margin-left: 5px">Nouveau message</div>
+        </div>
+      </div>
+      <div style="color: #fd6c43; font-family: 'MadeTommy Regular', serif; position: absolute; right: 10%">
+        Téléphone
+        <div>06 00 00 00 00</div>
+      </div>
+    </div>
+
+    <div id="modal_wrapper2" class="modal_wrapper2">
+      <div class="shadow2" (click)="closeForm()"></div>
+      <div class="success_wrap2">
+        <app-formulaire></app-formulaire>
+      </div>
+    </div>
+  </div>
+</body>
