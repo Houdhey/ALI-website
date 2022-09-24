@@ -28,6 +28,7 @@ import { BatmanComponent } from './batman/batman.component';
 import { MirrorComponent } from './funnyComps/mirror/mirror.component';
 import { WhoComponent } from './who/who.component';
 import { ChooseYourCharacterComponent } from './funnyComps/choose-your-character/choose-your-character.component';
+import { AudioPlayerComponent } from './funnyComps/audio-player/audio-player.component';
 export function playerFactory() {
   return player;
 }
@@ -47,6 +48,7 @@ export function playerFactory() {
     MirrorComponent,
     WhoComponent,
     ChooseYourCharacterComponent,
+    AudioPlayerComponent,
   ],
   imports: [
     BrowserModule,
