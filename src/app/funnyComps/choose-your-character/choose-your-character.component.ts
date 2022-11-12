@@ -8,6 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class ChooseYourCharacterComponent implements OnInit {
   constructor() {}
 
+  abdel = false;
+  pickCharacter(name) {
+    switch (name) {
+      case 'abdel':
+        this.abdel = true;
+        break;
+
+      default:
+        this.abdel = false;
+        break;
+    }
+  }
   ngOnInit(): void {
     console.clear();
 
