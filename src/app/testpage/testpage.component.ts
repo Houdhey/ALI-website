@@ -19,7 +19,7 @@ export class TestpageComponent implements OnInit {
     $('.menu-trigger').toggleClass('active');
   }
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    /*    window.scrollTo(0, 0);
     this.innerWidth = window.innerWidth;
     this.resizeImage();
 
@@ -36,7 +36,7 @@ export class TestpageComponent implements OnInit {
       show.setAttribute('data-up', '');
 
       next.setAttribute('data-show', '');
-    }, 2500);
+    }, 2500);*/
   }
 
   scrollToId(id) {

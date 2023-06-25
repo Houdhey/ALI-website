@@ -29,6 +29,8 @@ import { MirrorComponent } from './funnyComps/mirror/mirror.component';
 import { WhoComponent } from './who/who.component';
 import { ChooseYourCharacterComponent } from './funnyComps/choose-your-character/choose-your-character.component';
 import { AudioPlayerComponent } from './funnyComps/audio-player/audio-player.component';
+import { HomepageComponent } from './V2/homepage/homepage.component';
+import { AppleTitleComponent } from './V2/components/apple-title/apple-title.component';
 export function playerFactory() {
   return player;
 }
@@ -49,6 +51,8 @@ export function playerFactory() {
     WhoComponent,
     ChooseYourCharacterComponent,
     AudioPlayerComponent,
+    HomepageComponent,
+    AppleTitleComponent,
   ],
   imports: [
     BrowserModule,

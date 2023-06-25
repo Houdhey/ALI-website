@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MissionPageComponent } from './missions/mission-page/mission-page.component';
 import { BatmanComponent } from './batman/batman.component';
 import { WhoComponent } from './who/who.component';
+import {HomepageComponent} from "./V2/homepage/homepage.component";
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'homepage',
-    component: TestpageComponent,
+    component: HomepageComponent,
   },
   {
     path: 'login',
